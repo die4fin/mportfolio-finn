@@ -11,8 +11,9 @@ export default function Home() {
   ];
 
   return (
-    <main className="relative z-10 bg-transparent">
-      {/* Hero statis atau tanpa partikel berat */}
+    // Background dipaksa putih bersih
+    <main className="relative z-10 bg-white min-h-screen text-[#1d1d1f]">
+      {/* Hero harus dipastikan isinya juga sudah bertema putih */}
       <Hero />
       
       <section className="px-8 pb-32 max-w-lg mx-auto -mt-10 relative z-20">
@@ -24,9 +25,18 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.1 }}
             >
-              <Link href={item.link} className="group block py-6 border-b border-white/5 active:opacity-50 transition-opacity">
-                <span className="text-[9px] uppercase tracking-[0.4em] text-gray-600 block mb-2">{item.label}</span>
-                <h3 className="text-4xl font-bold tracking-tighter uppercase group-hover:text-[#B57EDC] transition-colors">
+              {/* Border diganti jadi hitam transparan (halus) */}
+              <Link 
+                href={item.link} 
+                className="group block py-6 border-b border-black/5 active:opacity-50 transition-opacity"
+              >
+                {/* Teks sekunder abu-abu khas Apple */}
+                <span className="text-[9px] uppercase tracking-[0.4em] text-[#86868b] block mb-2">
+                  {item.label}
+                </span>
+                
+                {/* Heading Hitam Pekat dengan hover Biru Apple */}
+                <h3 className="text-4xl font-bold tracking-tighter uppercase group-hover:text-[#FFC111] transition-colors text-[#1d1d1f]">
                   {item.title}
                 </h3>
               </Link>

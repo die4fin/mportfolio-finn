@@ -24,7 +24,7 @@ const menuItems = [
   },
   { 
     title: "Project", 
-    sub: "Dithvora • FS360 • EcoVerse", 
+    sub: "FINDIT MLBB Draft Sim • Dithvora • FS360 • EcoVerse", 
     path: "/projects" 
   }
 ];
@@ -33,13 +33,13 @@ const menuItems = [
     <nav className="fixed top-0 w-full z-[100] p-5">
       {/* Container Utama - Menggunakan White/5 & Backdrop Blur Tinggi */}
       <div className="max-w-md mx-auto bg-white/[0.03] backdrop-blur-3xl border border-white/[0.08] rounded-[2rem] p-4 flex justify-between items-center shadow-[0_8px_32px_0_rgba(0,0,0,0.3)]">
-        <span className="font-bold tracking-tighter text-lg px-2 text-white">
-          FINN<span className="text-[#B57EDC]">.</span>
+        <span className="font-bold tracking-tighter text-lg px-2 text-black">
+          FINN<span className="text-[#FFC111]">.</span>
         </span>
         
         <button 
           onClick={() => setIsOpen(!isOpen)}
-          className="bg-white/5 p-2 rounded-full hover:bg-white/10 transition-all active:scale-90 text-white border border-white/5"
+          className="bg-white/5 p-2 rounded-full hover:bg-yellow-400 transition-all active:scale-90 text-black border border-white/5"
           aria-label="Toggle Menu"
         >
           {isOpen ? <X size={20} /> : <Menu size={20} />}
@@ -64,21 +64,21 @@ const menuItems = [
                   className="group flex items-center justify-between p-4 rounded-2xl hover:bg-white/[0.05] border border-transparent hover:border-white/10 transition-all"
                 >
                   <div className="space-y-1">
-                    <h4 className="font-bold text-sm text-white/90 group-hover:text-[#B57EDC] transition-colors">
+                    <h4 className="font-bold text-sm text-black group-hover:text-[#FFC111] transition-colors">
                       {item.title}
                     </h4>
-                    <p className="text-[9px] text-gray-400 uppercase tracking-[0.2em]">
+                    <p className="text-[9px] text-black uppercase tracking-[0.2em]">
                       {item.sub}
                     </p>
                   </div>
-                  <ArrowUpRight size={14} className="text-gray-500 group-hover:text-[#B57EDC] transition-colors" />
+                  <ArrowUpRight size={14} className="text-gray-500 group-hover:text-[#FFC111] transition-colors" />
                 </a>
               ))}
             </div>
             
             <div className="mt-8 pt-6 border-t border-white/5 text-center">
-              <p className="text-[9px] text-gray-500 uppercase tracking-[0.3em]">
-                InFinnity Labs • 2026
+              <p className="text-[9px] text-black uppercase tracking-[0.3em]">
+                ARIFIN Ramadhani • 2026
               </p>
             </div>
           </motion.div>
