@@ -69,7 +69,7 @@ By leveraging an XGBoost Machine Learning model and a highly interactive, cinema
 
 ## 👨‍💻 Developed By
 
-**InFinnity Labs** *Architected and built from scratch by an independent software engineer and tech consultant.*
+**FINDIT** *Architected and built from scratch by an independent software engineer and tech consultant.*
 
 ---
 *If you find this project interesting, feel free to give it a ⭐️ on GitHub!*
