@@ -22,7 +22,7 @@ export default function Hero() {
           <div className="w-full h-full rounded-full overflow-hidden border border-[#d2d2d7]/50 relative z-10 bg-white shadow-[0_20px_50px_rgba(0,0,0,0.08)] p-1.5">
             <div className="w-full h-full rounded-full overflow-hidden">
               <Image 
-                src="/profile.png" 
+                src="/profile1.jpeg" 
                 alt="Arifin Profile" 
                 fill
                 className="object-cover object-top hover:scale-105 transition-transform duration-700" 
